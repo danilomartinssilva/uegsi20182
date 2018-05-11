@@ -15,8 +15,15 @@ public class Index {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("TTESTE");
-        
+        System.out.println("TTESTE"); 
+       Livro l = new Livro();
+      Author a = new Author();
+      a.setEmail("teste");
+      a.setName("TESTE");
+      l.setAuthor(a);
+        System.out.println(l.getAuthor().getEmail());
+       
+       
     }
     
 }
