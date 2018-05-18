@@ -5,6 +5,8 @@
  */
 package novoteste;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author danilo
@@ -15,14 +17,24 @@ public class Index {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("TTESTE"); 
-       Livro l = new Livro();
-      Author a = new Author();
-      a.setEmail("teste");
-      a.setName("TESTE");
-      l.setAuthor(a);
-        System.out.println(l.getAuthor().getEmail());
-       
+       //Livro l = new Livro();
+       //l.setAuthor(author);
+        ArrayList<Livro> lista = new ArrayList();
+        Livro l = new Livro();
+        Livro l1 = new Livro();
+        l.setNome("Danilo");
+        l1.setNome("Teste");
+        lista.add(l);
+        lista.add(l1);
+        for(int i=0;i<lista.size();i++){
+            System.out.println("Resultado"+lista.get(i).getNome());
+        }
+        
+        
+        
+        
+        
+        
        
     }
     
